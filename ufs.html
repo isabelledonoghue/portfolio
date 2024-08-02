@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Isabelle Donoghue</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav id="desktop-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 class="title-proj">UFS Flower Finder</h1>
+        <div class="proj-img-center">
+            <img src="./assets/ufs-proj.png" alt="UFS Flower Finder" class="project-img-proj"/>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn btn-color-1 proj-button" onclick="location.href='https://www.figma.com/proto/893FTFP5s4rXDzb3Hu1qwz/Flower-Finder-Tool-Design?t=OjlSt20xzub19j0G-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=3-2'">Figma</button>
+            <button class="btn btn-color-1 proj-button" onclick="location.href='https://github.com/isabelledonoghue/ufs-flower-finder'">Github</button>
+        </div>
+
+        <h3 class="proj-process-header">Timeline</h3>
+        <p class="text-proj">July 2024 - Present</p>
+        <h3 class="proj-process-header">Skills</h3>
+        <p class="text-proj">Python, SQL, Node.js, HTML, CSS</p>
+        <p class="text-proj">User Research, Prototyping, Custom APIs, Data Scraping</p>
+
+        <h2 class="section_text_p2-proj">Overview</h2>
+        <p class="text-proj">This project, undertaken as part of my role as a web developer at the University Flower Shop, involves creating a web-based tool for flower buyers. The tool is designed to process buyer queries, scrape data from multiple flower wholesale websites, and deliver comparative results through a custom API. The final product aims to enhance the decision-making process by providing comprehensive data on available flowers based on various criteria.</p>
+
+        <h2 class="section_text_p2-proj">Process</h2>
+        <h3 class="proj-process-header">Research</h3>
+        <p class="text-proj">I began the project by conducting in-depth research by shadowing buyers and interviewing them to understand their flower buying methods. This included multiple consultations with company owners to refine the tool's requirements and align them with expected cost benefits.</p>
+        <h3 class="proj-process-header">Prototyping</h3>
+        <p class="text-proj">During the next phase I focused on developing a high-fidelity prototype using Figma. This prototype was reviewed by employees to ensure that all relevant data points were included and that the user interface was both functional and intuitive.</p>
+        <h3 class="proj-process-header">Data Scraping</h3>
+        <p class="text-proj">I began backend development with the implementation of data scraping scripts for four wholesaler websites: Kennicott, Mayesh, Holex, and Rooted Farmers. I utilized the Puppeteer library in Node.js to automate interactions and extract data. This involved a detailed analysis of the code behind each website to accurately identify and retrieve data on specific flower types.</p>
+        <h3 class="proj-process-header">Database & API</h3>
+        <p class="text-proj">The extracted data was formatted into JSON and stored in a SQL database. I then developed API endpoints for handling GET and POST requests, facilitating seamless data retrieval and interaction between the backend and frontend components.</p>
+
+        <h2 class="section_text_p2-proj">Next Steps</h2>
+        <p class="text-proj">The final phase of this project involves designing a user-friendly interface that allows buyers to submit queries and trigger API requests. This interface will be built using Flask, and the results will be displayed in an interactive, filterable spreadsheet format. Following the integration of frontend and backend systems, the website will undergo comprehensive user testing to ensure functionality and usability.</p>
+        <br>
+        <br>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

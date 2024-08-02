@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Isabelle Donoghue</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav id="desktop-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 class="title-proj">Instagram Clone</h1>
+        <div class="proj-img-center">
+            <img src="./assets/insta-proj.png" alt="Instagram Clone" class="project-img-proj"/>
+        </div>
+
+        <h3 class="proj-process-header">Timeline</h3>
+        <p class="text-proj">May 2024</p>
+        <h3 class="proj-process-header">Skills</h3>
+        <p class="text-proj">Python, Flask, React, HTML, CSS, JavaScript, SQL, AWS, REST API, JSON</p>
+
+        <h2 class="section_text_p2-proj">Overview</h2>
+        <p class="text-proj">This project is an Instagram clone that I developed in three stages, leveraging static site generation, server-side dynamic pages, and client-side dynamic pages. The final product is a fully interactive web application with functionalities similar to Instagram, including user management, posts, comments, likes, and a REST API for client-side dynamic interactions.</p>
+
+        <h2 class="section_text_p2-proj">Process</h2>
+        <h3 class="proj-process-header">Static Site Generator</h3>
+        <p class="text-proj">I began the project by implementing a templated static site generator using Python. This tool processes HTML templates, JSON data, and static files (such as images and CSS) to generate static content for a non-interactive website. The focus was on understanding HTML templates and static site generation. I developed a Python program named insta485generator to automate the generation of static HTML files from input directories, laying the groundwork for static content creation.</p>
+        <h3 class="proj-process-header">Server-Side Dynamic Pages</h3>
+        <p class="text-proj">Building on the static site generator, this stage involved creating server-side dynamic pages with Flask. The website was enhanced with features for managing users, posts, comments, and likes. This was achieved by setting up a SQL database and implementing server-side rendering. I deployed the application on AWS, configuring the EC2 instance and ensuring it was ready for handling interactive user features.</p>
+        <h3 class="proj-process-header">Client-Side Dynamic Pages</h3>
+        <p class="text-proj">The final stage transformed the server-side application into a client-side dynamic application. I refactored server-side code into a REST API and developed a JavaScript client application using React. This allowed for interactive features such as dynamic user interfaces and seamless updates. The client-side application enhances the user experience with functionalities like infinite scrolling and real-time interactions without page reloads.</p>
+        
+        <h2 class="section_text_p2-proj">Outcomes</h2>
+        <p class="text-proj">Throughout the project, I developed expertise in Python programming, server-side development with Flask, client-side development using React, and working with AWS for deployment. I gained experience in designing and implementing both static and dynamic web applications, handling database interactions, and creating seamless user experiences with modern web technologies. The final product is a comprehensive Instagram clone featuring a static site generator for initial content, an interactive server-side application for managing users, posts, comments, and likes, and a dynamic client-side interface with infinite scrolling and real-time updates for an engaging user experience.</p>
+        <br>
+        <br>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

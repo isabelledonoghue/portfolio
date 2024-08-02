@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Isabelle Donoghue</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav id="desktop-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 class="title-proj">Search Engine</h1>
+        <div class="proj-img-center">
+            <img src="./assets/search-proj.png" alt="Search Engine" class="project-img-proj"/>
+        </div>
+
+        <h3 class="proj-process-header">Timeline</h3>
+        <p class="text-proj">June 2024</p>
+        <h3 class="proj-process-header">Skills</h3>
+        <p class="text-proj">Python, REST API, JavaScript, HTML, CSS</p>
+        <p class="text-proj">MapReduce, Distributed Systems, AWS, Networking, Concurrency</p>
+
+        <h2 class="section_text_p2-proj">Overview</h2>
+        <p class="text-proj">This project involved building a scalable search engine similar to Google or Bing. I developed the search engine using a MapReduce framework for parallel data processing and a segmented inverted index for efficient text retrieval. The final product includes a REST API for search results and a user interface for querying and displaying results.</p>
+
+        <h2 class="section_text_p2-proj">Process</h2>
+        <h3 class="proj-process-header">MapReduce Framework Implementation</h3>
+        <p class="text-proj">The project began with implementing a MapReduce framework in Python, inspired by Google's MapReduce paper. This framework executes MapReduce programs with distributed processing on multiple computers, and includes two main components: a Manager that handles job distribution and multiple Workers that perform map and reduce tasks. My goal was to understand MapReduce program execution, basic distributed systems, fault tolerance, and networking. An example of the MapReduce job involved a Word Count task with input files and Worker instances, demonstrating the framework's functionality.</p>
+        <h3 class="proj-process-header">Search Engine Development</h3>
+        <p class="text-proj">Building on the MapReduce framework, this stage involved developing a scalable search engine. The project focused on information retrieval concepts such as text analysis (tf-idf) and link analysis (PageRank), and utilized MapReduce for parallel data processing. I created a segmented inverted index of web pages using a pipeline of MapReduce programs. Additionally, I developed an Index server with a REST API for returning search results in JSON format and a Search server providing a user interface that mimics Google or Bing.</p>
+        
+        <h2 class="section_text_p2-proj">Outcomes</h2>
+        <p class="text-proj">Throughout the project, I gained expertise in implementing distributed systems and parallel processing with MapReduce, as well as working with Python for large-scale data processing. I also developed skills in building scalable web applications, including creating REST APIs and user interfaces. The project provided valuable experience in information retrieval concepts, networking, concurrency, and using cloud services for distributed computing. The final product is a scalable search engine with a MapReduce framework, a segmented inverted index, a REST API for search results, and a user interface for displaying queries.</p>
+        <br>
+        <br>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

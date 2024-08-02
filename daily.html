@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Isabelle Donoghue</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav id="desktop-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 class="title-proj">The Michigan Daily<br>Orientation Edition 2024</h1>
+        <div class="proj-img-center">
+            <img src="./assets/daily2-proj.png" alt="Michigan Daily Orientation Edition" class="project-img-proj"/>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn btn-color-1 proj-button" onclick="location.href='https://specials.michigandaily.com/2024/orientation-edition/'">Website</button>
+        </div>
+
+        <h3 class="proj-process-header">Timeline</h3>
+        <p class="text-proj">June 2024</p>
+        <h3 class="proj-process-header">Skills</h3>
+        <p class="text-proj">JavaScript, HTML, CSS, Web Development, User Interaction Design</p>
+
+
+        <h2 class="section_text_p2-proj">Overview</h2>
+        <p class="text-proj">As a web developer for The Michigan Daily, I worked on engineering the Freshman Orientation Edition, a dynamic web application that integrates editorial content with interactive visual elements. This project aimed to deliver an engaging, user-centric website using advanced front-end technologies and interactive designs.</p>
+
+        <h2 class="section_text_p2-proj">Process</h2>
+        <h3 class="proj-process-header">Interactive Elements</h3>
+        <p class="text-proj">My role focused on the development and implementation of interactive features. I utilized JavaScript and CSS animations to create scroll-triggered doodles that dynamically resize art pieces in response to user scrolling. I designed hover effects using CSS transitions and JavaScript event listeners to display detailed popups for articles. I also incorporated SVG animations and JavaScript to create bouncing arrows that visually indicate clickable article icons. These features were engineered to enhance user engagement and improve navigation intuitiveness.</p>
+        <h3 class="proj-process-header">Styling and Layout</h3>
+        <p class="text-proj">I was also responsible for assisting with styling and layout to ensure a cohesive visual design. This included the use of responsive design techniques and CSS Grid/Flexbox to align art and editorial content seamlessly.</p>
+        <h3 class="proj-process-header">Debugging and Optimization</h3>
+        <p class="text-proj">My work also involved cross-browser testing and debugging to resolve compatibility issues. I employed tools such as Chrome DevTools and browser testing to identify and fix bugs related to interactive elements and styling.</p>
+        
+        <h2 class="section_text_p2-proj">Outcomes</h2>
+        <p class="text-proj">The 2024 Orientation Edition is a fully interactive and visually compelling site that integrates art animations, hover-triggered article popups, and animated visual cues. As a centerpiece of The Michigan Daily's outreach, it reached all incoming University of Michigan freshmen and was prominently featured across the Daily's platforms. This special edition site also involved extensive collaboration across editorial, art, and web sections to ensure a seamless integration of content and aesthetics. The collaborative effort reinforced the Daily's commitment to enhancing the student experience through creative and interactive digital media.</p>
+        <br>
+        <br>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

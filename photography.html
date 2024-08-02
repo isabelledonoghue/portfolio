@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Isabelle Donoghue</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav id="desktop-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 class="title-proj">Travel Photography Site</h1>
+        <div class="proj-img-center">
+            <img src="./assets/photography-proj.png" alt="Travel Photography Site" class="project-img-proj"/>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn btn-color-1 proj-button" onclick="location.href='https://isabelledonoghue.github.io/personal-photography/'">Website</button>
+            <button class="btn btn-color-1 proj-button" onclick="location.href='https://github.com/isabelledonoghue/personal-photography'">GitHub</button>
+        </div>
+
+        <h3 class="proj-process-header">Timeline</h3>
+        <p class="text-proj">April 2024</p>
+        <h3 class="proj-process-header">Skills</h3>
+        <p class="text-proj">JavaScript, HTML, CSS, Web Development, Interactive Design, Photography</p>
+
+
+        <h2 class="section_text_p2-proj">Overview</h2>
+        <p class="text-proj">Driven by my passion for photography, I set out to build a personal travel photography website to share photos from my trips across the globe. Blending my love for capturing moments with my passion for web development, I created an accessible site that highlights a variety of photos in multiple formats. This project brings together my enthusiasm for web design and storytelling, using interactive features to make the experience engaging.</p>
+
+        <h2 class="section_text_p2-proj">Process</h2>
+        <h3 class="proj-process-header">Image Management and Setup</h3>
+        <p class="text-proj">I started by converting over 100o of my images to JPG format and organizing them into subfolders for each location. Setting up my GitHub repository involved creating folders for CSS and images and implementing a basic HTML layout. I also added skip-to-main links to the HTML for accessibility. Each continent page featured a customized map image with pins marking featured cities.</p>
+        <h3 class="proj-process-header">Design & Styling</h3>
+        <p class="text-proj">In the second phase, I focused on refining the site design. I applied unique color schemes for each location page and tackled color contrast issues to ensure accessibility. I used specific CSS classes to achieve alternating colors and distinctive grid layouts, such as alternating between large and small images on the North America page. I also added Instagram and email icons, styled images with border-radius, and implemented media queries for a responsive design.</p>
+        <h3 class="proj-process-header">Interactive Features & Accessibility</h3>
+        <p class="text-proj">The third phase involved developing interactive elements and improving accessibility. I added alt text to all 100+ images and worked on an interactive world map for the homepage. This map was initially challenging but was eventually divided into three clickable sub-images to guide users to the correct pages. I also introduced a scrolling feature for the Europe page image grids using flexbox and ensured keyboard accessibility for interactive elements.</p>
+        <h3 class="proj-process-header">Testing & Deployment</h3>
+        <p class="text-proj">In the final stages, I tested and validated site functionality and responsiveness. I addressed accessibility issues like color contrast and HTML errors, and updated media queries for various devices. After making necessary adjustments, I successfully deployed the site with all interactive features, styling, and accessibility improvements.</p>
+        
+        <h2 class="section_text_p2-proj">Outcomes</h2>
+        <p class="text-proj">The final result is a visually engaging travel photography website that serves as a showcase of my photography. The site features interactive elements like a world map with clickable regions, custom image grids with alternating sizes, and lightbox galleries. It not only highlights my love for photography but also demonstrates my ability to blend web development skills with personal passions, all while emphasizing accessibility in digital media.</p>
+        <br>
+        <br>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
