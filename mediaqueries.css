@@ -82,7 +82,8 @@
   
   @media screen and (max-width: 800px) {
     .about-containers {
-      flex: wrap;
+      display: flex;
+      flex-direction: column;
     }
   }
 
