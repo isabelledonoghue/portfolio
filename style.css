@@ -511,11 +511,19 @@ footer p {
     height: fit-content;
 }
 
+.proj-img-center img {
+    max-height: 50%;
+    max-width: 50%;
+    height: auto;
+    width: auto;
+}
+
 .proj-img-center {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5vh;
+    height: auto;
 }
 
 .proj-button {
