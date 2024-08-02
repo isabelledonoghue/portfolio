@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Isabelle Donoghue</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="mediaqueries.css"/>
+    </head>
+    <body>
+        <header>
+            <a href = "#main" class="skip-link">Skip to Main Content</a>
+            <nav id="desktop-nav">
+                <div class="logo"><a href="#profile">Isabelle Donoghue</a></div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+            <nav id="hamburger-nav">
+                <div class="logo"><a href="#profile">Isabelle Donoghue</a></div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <ul>
+                            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <section id="profile">
+                <div class="section_pic-container">
+                    <img src="./assets/headshot.png" alt="Isabelle Donoghue profile picture."/> 
+                </div>
+                <div class="section_text">
+                    <p class="section_text_p1">Hello! I'm</p>
+                    <h1 class="title">Isabelle Donoghue</h1>
+                    <p class="section_text_p2">Software Developer</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download Resume</button>
+                        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                    </div>
+                    <div id="socials-container">
+                        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/isabelledonoghue/'"/>
+                        <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/isabelledonoghue'"/>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <p class="section_text_p1">Get To Know More</p>
+                <h1 class="title">About Me</h1>
+                <div class="section-container">
+                    <div class="section_pic-container about-pic">
+                        <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic"/> 
+                    </div>
+                    <div class="about-details-container">
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                                <h3>Education</h3>
+                                <br>
+                                <p><b>Junior at University of Michigan</b></p>
+                                <p>B.S.E. in Computer Science</p>
+                                <p>Minor in UX Design</p>
+                                <br>
+                                <p><b>Current Courses</b></p>
+                                <p>EECS 376: Foundations of Computer Science, EECS 370: Intro to Computer Organization, SI 388: The H in HCI</p>
+                            </div>
+                            <div class="details-container">
+                                <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                                <h3>Skills</h3>
+                                <br>
+                                <p><b>Development</b></p>
+                                <p>C++, Python, React, HTML, JavaScript, SQL, React, Matlab, Flask, AWS, Git</p>
+                                <br>
+                                <p><b>Frontend Design</b></p>
+                                <p>CSS, Figma, Accessibility Testing, Usability Testing</p>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>I'm passionate about blending my <b>creative passion</b> with my <b>logical mindset</b> to tackle real-world challenges and emphasize <b>accessibility</b> in digital media!</p> 
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+            </section>
+
+            <section id="experience">
+                <p class="section_text_p1">Explore My</p>
+                <h1 class="title">Experience</h1>
+                <div class="experience-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <a href="https://www.uniflowershop.com/">
+                                <h2 class="experience-sub-title">University Flower Shop</h2>
+                            </a>
+                            <img src="./assets/ufs.jpeg" alt="University Flower Shop logo" class="comp-logo" onclick="location.href='https://www.uniflowershop.com/'">
+                            <p><b>Web Developer</b></p>
+                            <p>Contracted as a freelance web developer to modernize digital operations and develop a Flower Finder tool that autonomously scrapes data from flower wholesalers, providing significant cost savings.</p>
+                        </div>
+                        <div class="details-container">
+                            <a href="https://www.michigandaily.com/">
+                                <h2 class="experience-sub-title">The Michigan Daily</h2>
+                            </a>
+                            <img src="./assets/daily.jpg" alt="The Michigan Daily logo" class="comp-logo" onclick="location.href='https://www.michigandaily.com/'"/>
+                            <p><b>Web Engineer</b></p>
+                            <p>Led the design and development of multiple websites as a Web Engineer, enhancing internal systems and fostering cross-departmental collaboration to boost reader engagement and staff experiences.</p>
+                        </div>
+                        <div class="details-container">
+                            <a href="https://joyofcoding.eecs.umich.edu/">
+                                <h2 class="experience-sub-title">Joy of Coding</h2>
+                            </a>
+                            <img src="./assets/ece.jpg" alt="UMICH EECS department logo" class="comp-logo" onclick="location.href='https://joyofcoding.eecs.umich.edu/'"/>
+                            <p><b>Student Coach</b></p>
+                            <p>Coached over 500 high school students worldwide in introductory Python concepts through a virtual summer program, creating interactive lessons, YouTube videos, and offering 1-on-1 tutoring for enhanced learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+            </section>
+
+            <section id="projects">
+                <p class="section_text_p1">Browse My Recent</p>
+                <h1 class="title">Projects</h1>
+                <div class="project-details-container">
+                    <div class="about-containers">
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="./assets/ufs-proj.png" alt="UFS Flower Finder" class="project-img" onclick="location.href='ufs.html'"/>
+                            </div>
+                            <a href="ufs.html">
+                                <h2 class="experience-sub-title project-title">UFS Flower Finder</h2>
+                            </a>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='ufs.html'">
+                                    Details 
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="./assets/photography-proj.png" alt="Travel Photography Site" class="project-img" onclick="location.href='photography.html'"/>
+                            </div>
+                            <a href="photography.html">
+                                <h2 class="experience-sub-title project-title">Travel Photography Site</h2>
+                            </a>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='photography.html'">
+                                    Details 
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="./assets/insta-proj.png" alt="Instagram Clone Project" class="project-img" onclick="location.href='insta.html'"/>
+                            </div>
+                            <a href='insta.html'>
+                                <h2 class="experience-sub-title project-title">Instagram Clone</h2>
+                            </a>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='insta.html'">
+                                    Details 
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="./assets/search-proj.png" alt="Search Engine Project" class="project-img" onclick="location.href='search.html'"/>
+                            </div>
+                            <a href='search.html'>
+                                <h2 class="experience-sub-title project-title">Search Engine</h2>
+                            </a>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='search.html'">
+                                    Details 
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="./assets/daily2-proj.png" alt="Michigan Daily Orientation Edition" class="project-img" onclick="location.href='daily.html'"/>
+                            </div>
+                            <a href='daily.html'>
+                                <h2 class="experience-sub-title project-title">Michigan Daily Orientation Edition</h2>
+                            </a>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="location.href='daily.html'">
+                                    Details 
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-container color-container">
+                            <div class="article-container">
+                                <img src="./assets/zara-proj.png" alt="Zara Usability Analysis" class="project-img" onclick="location.href='https://github.com/'"/>
+                            </div>
+                            <a href='https://ajar-net-f7a.notion.site/Redesigning-the-Zara-Website-bbec3debe417492b87170c83768fa78a?pvs=4'>
+                                <h2 class="experience-sub-title project-title">Zara Usability Analysis</h2>
+                            </a>
+                            <div class="btn-container">
+                                <button class="btn btn-color-2 project-btn" onclick="window.open('https://ajar-net-f7a.notion.site/Redesigning-the-Zara-Website-bbec3debe417492b87170c83768fa78a?pvs=4', '_blank')">
+                                    Details 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+            </section>
+
+            <section id="contact">
+                <p class="section_text_p1">Get in Touch</p>
+                <h1 class="title">Contact Me</h1>
+                <div class="contact-info-upper-container">
+                    <div class="contact-info-container">
+                        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                        <p><a href="mailto:izzyd@umich.edu">izzyd@umich.edu</a></p>
+                    </div>
+                    <div class="contact-info-container">
+                        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                        <p><a href="https://www.linkedin.com/in/isabelledonoghue/">LinkedIn</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Isabelle Donoghue. All Rights Reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
