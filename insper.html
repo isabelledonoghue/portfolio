@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Isabelle Donoghue</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav id="desktop-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 class="title-proj">Inspired Perpsective Consulting Website</h1>
+        <div class="proj-img-center">
+            <img src="./assets/insper.png" alt="Inspired Perpsective Consulting" class="project-img-proj"/>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn btn-color-1 proj-button" onclick="location.href='http://inspiredperspective.com/'">Website</button>
+            <button class="btn btn-color-1 proj-button" onclick="location.href='https://github.com/isabelledonoghue/inspiredperspective'">GitHub</button>
+        </div>
+
+        <h3 class="proj-process-header">Timeline</h3>
+        <p class="text-proj">November 2024</p>
+        <h3 class="proj-process-header">Skills</h3>
+        <p class="text-proj">HTML, CSS, JavaScript, Figma, Canva, DNS</p>
+
+        <h2 class="section_text_p2-proj">Overview</h2>
+        <p class="text-proj">I was hired by Inspired Perspective Consulting to create their first website, providing them with an online presence. The project involved understanding the company's vision, designing logos and website prototypes, and developing a responsive and user friendly website.</p>
+
+        <h2 class="section_text_p2-proj">Process</h2>
+        <h3 class="proj-process-header">Vision and Design</h3>
+        <p class="text-proj">To align with the company's goals, I met with the owner to discuss the vision and values of Inspired Perspective Consulting. I used Canva to design multiple iterations of the company logo and created website prototypes on Figma. Through iterative feedback, I ensured the designs met the client's expectations.</p>
+        <h3 class="proj-process-header">Development</h3>
+        <p class="text-proj">Using HTML, CSS, and JavaScript, I developed a fully functional website. I incorporated content sourced from the company's LinkedIn and testimonials document, ensuring it reflected the company's brand and mission. I also integrated a contact form that sends submissions directly to the client's email.</p>
+        <h3 class="proj-process-header">Deployment</h3>
+        <p class="text-proj">After completing the development, I hosted the website and configured the domain name settings to make it publicly accessible. This process included setting up DNS records and ensuring smooth functionality.</p>
+       
+        <h2 class="section_text_p2-proj">Outcomes</h2>
+        <p class="text-proj">This project resulted in a professional and polished online presence for Inspired Perspective Consulting. I gained experience in client collaboration, iterative design using Canva and Figma, web development with HTML, CSS, and JavaScript, and domain hosting. The client was highly satisfied with the final product, which effectively communicates their vision and facilitates client engagement through an integrated contact form.</p>
+        <br>
+        <br>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
