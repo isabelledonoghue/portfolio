@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Isabelle Donoghue</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav id="desktop-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 class="title-proj">Ford Towing Experiences Prototypes</h1>
+        <div class="proj-img-center">
+            <img src="./assets/ford.png" alt="Ford ADAS Internship" class="project-img-proj"/>
+        </div>
+
+        <h3 class="proj-process-header">Timeline</h3>
+        <p class="text-proj-header">June 2025 - August 2025</p>
+        <h3 class="proj-process-header">Skills</h3>
+        <p class="text-proj-header">Python, WebSockets, ProtoPie, Figma, UX Prototyping</p>
+        <p class="text-proj-header">Human-Centered Design, System Simulation, Stakeholder Demos</p>
+
+        <h2 class="section_text_p2-proj">Overview</h2>
+        <p class="text-proj">As an intern at Ford on the Digital Product team, I developed advanced prototypes for ADAS towing features including a new Towing App and Pro Trailer Assist tools. My work combined user experience design with real-time system simulation, allowing stakeholders to interact with highly functional prototypes that mimicked live vehicle conditions.</p>
+
+        <h2 class="section_text_p2-proj">Process</h2>
+        <h3 class="proj-process-header">Prototyping & Custom Components</h3>
+        <p class="text-proj">I built high-fidelity prototypes in Figma, creating custom reusable components to capture complex towing interactions. These prototypes were designed to accurately represent vehicle workflows and provide realistic user flows for testing and feedback sessions.</p>
+
+        <h3 class="proj-process-header">Simulation & Integration</h3>
+        <p class="text-proj">To extend beyond static UI, I integrated simulated vehicle CAN signals into my prototypes. Using ProtoPie, I imported vehicle data and wrote a custom Python WebSocket script to override default ProtoPie messaging. This allowed me to inject custom CAN signals directly into the interface, updating the UI in real time to simulate live driving scenarios.</p>
+
+        <h3 class="proj-process-header">Stakeholder Demos</h3>
+        <p class="text-proj">I regularly demoed these interactive prototypes to Ford stakeholders, ensuring alignment with product vision and gathering feedback. The ability to simulate dynamic driving conditions provided a more convincing demonstration of ADAS capabilities, bridging the gap between design and engineering.</p>
+
+        <h2 class="section_text_p2-proj">Next Steps</h2>
+        <p class="text-proj">Future development could include scaling these prototypes into a fully interactive testing platform, allowing engineers and designers to simulate additional vehicle scenarios and rapidly iterate on ADAS features before integration into production vehicles.</p>
+        <br>
+        <br>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -147,6 +147,11 @@
       grid-template-rows: repeat(auto-fill, minmax(300px, auto));
     }
     .text-proj {
+      text-align: left;
+      margin-left: 5vh;
+      margin-right: 5vh;
+    }
+    .text-proj-header {
       text-align: center;
       margin-left: 5vh;
       margin-right: 5vh;

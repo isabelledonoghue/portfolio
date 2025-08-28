@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Isabelle Donoghue</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <link rel="icon" href="./assets/icon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <nav id="desktop-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#experience">Experience</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo"><a href="index.html#projects">Isabelle Donoghue</a></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="index.html#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 class="title-proj">Machine Learning for Alzheimer's Brain Classification</h1>
+        <div class="proj-img-center">
+            <img src="./assets/bigdata.png" alt="Machine Learning Alzheimer's Project" class="project-img-proj"/>
+        </div>
+
+        <div class="btn-container">
+            <button class="btn btn-color-1 proj-button" onclick="location.href='./assets/bigdatareport.pdf'">Data Report</button>
+        </div>
+
+        <h3 class="proj-process-header">Timeline</h3>
+        <p class="text-proj-header">March 2024 - May 2024</p>
+        <h3 class="proj-process-header">Skills</h3>
+        <p class="text-proj-header">MATLAB, Data Visualization</p>
+        <p class="text-proj-header">Machine Learning, Statistical Analysis, Biomedical Data Processing</p>
+
+        <h2 class="section_text_p2-proj">Overview</h2>
+        <p class="text-proj">In this project, I applied computational and machine learning methods to analyze large-scale biomedical datasets related to Alzheimer's Disease. My goal was to explore the relationship between the APOE gene and structural brain changes, and to evaluate whether machine learning models could classify patients from MRI data with high accuracy.</p>
+
+        <h2 class="section_text_p2-proj">Process</h2>
+        <h3 class="proj-process-header">Data Engineering</h3>
+        <p class="text-proj">I integrated diverse datasets (GWAS, gene expression, transcriptomics, and MRI) into standardized formats (.csv, .mat) using MATLAB. This required extensive data cleaning, feature extraction, and merging across biomedical data sources.</p>
+
+        <h3 class="proj-process-header">Statistical & Computational Analysis</h3>
+        <p class="text-proj">I implemented statistical testing (t-tests, regression models) to measure significant differences in APOE gene expression across brain regions. Linear regression revealed strong correlations between APOE expression and gray-matter atrophy, providing evidence of APOE's role in Alzheimer's progression.</p>
+
+        <h3 class="proj-process-header">Machine Learning</h3>
+        <p class="text-proj"> I trained two machine learning models on MRI gray-matter volume features. A ridge-regularized linear model achieved <b>97.5% accuracy</b> on test data, demonstrating strong generalization. I also developed a neural network, which reached <b>84.0% accuracy</b> after parameter tuning, though it showed some overfitting. These results highlight the potential of machine learning to distinguish Alzheimer's patients from controls based solely on structural brain data.</p>
+
+        <h2 class="section_text_p2-proj">Next Steps</h2>
+        <p class="text-proj">To build on this project, in the future I could refine model performance by addressing overfitting, experiment with additional algorithms, and deploy the pipeline in an interface where users can upload imaging data and receive predictions in real time. This would transform the analysis from an academic study into a functional, accessible software tool.</p>
+        <br>
+        <br>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
